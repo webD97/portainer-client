@@ -1,0 +1,18 @@
+{
+  "name": "portainer-client",
+  "version": "0.1.0",
+  "description": "A node client for Portainer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webd97/portainer-client"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Danscheid",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
