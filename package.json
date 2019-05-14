@@ -19,7 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm run clean && node_modules/.bin/tsc -w -p tsconfig.json",
     "build": "npm run clean && node_modules/.bin/tsc -p tsconfig.json",
-    "prepublishOnly": "npm run build"
+    "prepack": "npm run build"
   },
   "author": "Christian Danscheid",
   "license": "MIT",
