@@ -27,7 +27,7 @@ export default class PortainerSession {
      * @param token The JWT token received via authentication
      */
     private constructor(host: string, token: string) {
-        this.host = (host.charAt(host.length - 1) !== '/') ? host + '/' : host;
+        this.host = (host.charAt(host.length - 1) !== '/') ? host : host.slice(0, host.length - 2);
         this.token = token;
     }
 
