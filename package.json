@@ -6,13 +6,26 @@
     "type": "git",
     "url": "https://github.com/webd97/portainer-client"
   },
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "package.json",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rm -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run clean && node_modules/.bin/tsc -w -p tsconfig.json",
+    "build": "npm run clean && node_modules/.bin/tsc -p tsconfig.json"
   },
   "author": "Christian Danscheid",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.5"
   }
 }
